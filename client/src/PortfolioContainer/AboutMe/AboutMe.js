@@ -1,21 +1,21 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
+// import Animations from "../../utilities/Animations";
 import "./AboutMe.css";
 
 export default function AboutMe(props) {
-  let fadeInScreenHandler = (screen) => {
-    if (screen.fadeInScreen !== props.id) return;
-    Animations.animations.fadeInScreen(props.id);
-  };
-  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
-    fadeInScreenHandler
-  );
+  // let fadeInScreenHandler = (screen) => {
+  //   if (screen.fadeInScreen !== props.id) return;
+  //   Animations.animations.fadeInScreen(props.id);
+  // };
+  // const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
+  //   fadeInScreenHandler
+  // );
 
   const SCREEN_CONSTATNTS = {
     description:
-      "A Passionate programmer and computer science graduate with strong foundation programming skills, particularly skilled in Java and python who enjoys challenging tasks and has keen eye for innovations and developments. Reliable with deadlines and always motivates team by creating positve environment",
+      "Hello, My call name is Sai and I'm a Computer Science graduate and dedicated programmer with strong foundation programming skills, nerd in Java who enjoys challenging tasks and has keen eye for innovations and developments. Reliable with deadlines and always motivates team by creating positve environment",
     highlights: {
       bullets: ["Self-motivation", "Committment", "Well-organized"],
       heading: "Few qualities can describe myself:",

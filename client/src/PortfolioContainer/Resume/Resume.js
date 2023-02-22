@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
+// import ScrollService from "../../utilities/ScrollService";
+// import Animations from "../../utilities/Animations";
 import "./Resume.css";
 
 export default function Resume(props) {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffSetStyle, setCarousalOffSetStyle] = useState({});
 
-  let fadeInScreenHandler = (screen) => {
-    if (screen.fadeInScreen !== props.id) return;
-    Animations.animations.fadeInScreen(props.id);
-  };
-  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
-    fadeInScreenHandler
-  );
+  // let fadeInScreenHandler = (screen) => {
+  //   if (screen.fadeInScreen !== props.id) return;
+  //   Animations.animations.fadeInScreen(props.id);
+  // };
+  // const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(
+  //   fadeInScreenHandler
+  // );
 
   const ResumeHeading = (props) => {
     return (
