@@ -31,9 +31,9 @@ export default function Resume(props) {
             <span>{props.description ? props.description : ""}</span>
           </div>
           {props.fromDate && props.toDate ? (
-            <dov className="heading-date">
+            <div className="heading-date">
               {props.fromDate + "-" + props.toDate}
-            </dov>
+            </div>
           ) : (
             <div></div>
           )}
@@ -44,7 +44,7 @@ export default function Resume(props) {
 
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
+    // { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
