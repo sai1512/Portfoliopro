@@ -101,31 +101,31 @@ export default function Resume(props) {
         toDate={"2021"}
       />
     </div>,
-    <div
-      className="resume-screen-container work-experience"
-      key="work-experience"
-    >
-      <ResumeHeading
-        heading={"Data science using python Online Intern"}
-        subHeading={"Andhra Pradesh State Skill Development Corporation"}
-        fromDate={"Apr-2021"}
-        toDate={"Jun-2021"}
-      />
-      <div className="experience-description">
-        <span className="resume-description-text">
-          Experienced as Data analytic. Worked with different types of datasets
-          and analysed the outcomes by using Python and Machine Learning
-          algorithms.
-        </span>
-      </div>
-      {/* <div className="experience-description">
-        <span className="resume-description-text">
-          Experienced as Data analytic. Worked with different types of datasets
-          and analysed the outcomes by using Python and Machine Learning
-          algorithms.
-        </span>
-      </div> */}
-    </div>,
+    // <div
+    //   className="resume-screen-container work-experience"
+    //   key="work-experience"
+    // >
+    //   <ResumeHeading
+    //     heading={"Data science using python Online Intern"}
+    //     subHeading={"Andhra Pradesh State Skill Development Corporation"}
+    //     fromDate={"Apr-2021"}
+    //     toDate={"Jun-2021"}
+    //   />
+    //   <div className="experience-description">
+    //     <span className="resume-description-text">
+    //       Experienced as Data analytic. Worked with different types of datasets
+    //       and analysed the outcomes by using Python and Machine Learning
+    //       algorithms.
+    //     </span>
+    //   </div>
+    //   {/* <div className="experience-description">
+    //     <span className="resume-description-text">
+    //       Experienced as Data analytic. Worked with different types of datasets
+    //       and analysed the outcomes by using Python and Machine Learning
+    //       algorithms.
+    //     </span>
+    //   </div> */}
+    // </div>,
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
