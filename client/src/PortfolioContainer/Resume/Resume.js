@@ -31,9 +31,9 @@ export default function Resume(props) {
             <span>{props.description ? props.description : ""}</span>
           </div>
           {props.fromDate && props.toDate ? (
-            <dov className="heading-date">
+            <div className="heading-date">
               {props.fromDate + "-" + props.toDate}
-            </dov>
+            </div>
           ) : (
             <div></div>
           )}

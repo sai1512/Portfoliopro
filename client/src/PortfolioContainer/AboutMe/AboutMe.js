@@ -15,7 +15,7 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTATNTS = {
     description:
-      "Hello, My call name is Sai and I'm a Computer Science graduate and dedicated programmer with strong foundation programming skills, nerd in Java who enjoys challenging tasks and has keen eye for innovations and developments. Reliable with deadlines and always motivates team by creating positve environment",
+      "Hello, My call name is Sai. I'm a Computer Science graduate from Blekinge Tekniska H¨ogskola, Sweden and dedicated programmer with strong foundation programming skills, nerd in Java who enjoys challenging tasks and has keen eye for innovations and developments. ",
     highlights: {
       bullets: ["Self-motivation", "Committment", "Well-organized"],
       heading: "Few qualities can describe myself:",
@@ -50,7 +50,7 @@ export default function AboutMe(props) {
               <button className="btn primary-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >Let's talk</button>
-              <a href="Sai_cv.pdf" download="Sai Sai_cv.pdf">
+              <a href="./Sai_cv.pdf" download="Sai_cv.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
