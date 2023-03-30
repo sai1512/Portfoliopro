@@ -31,9 +31,9 @@ export default function Resume(props) {
             <span>{props.description ? props.description : ""}</span>
           </div>
           {props.fromDate && props.toDate ? (
-            <div className="heading-date">
+            <dov className="heading-date">
               {props.fromDate + "-" + props.toDate}
-            </div>
+            </dov>
           ) : (
             <div></div>
           )}
@@ -44,7 +44,7 @@ export default function Resume(props) {
 
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
-    // { label: "Work History", logoSrc: "work-history.svg" },
+    { label: "Bachelor Thesis", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
     { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
@@ -60,30 +60,31 @@ export default function Resume(props) {
   ];
 
   const projectDetails = [
-    // {
-    //   title: "Malicious Web Content Detection",
-    //   duration: { fromDate: "Aug-2021", toDate: "Oct-2021" },
-    //   description:
-    //     "Builded Machine learning model can predict whether the user entered URL is safe or not.",
-    //   subHeading:
-    //     "Technologies used: python, anaconda, Django, JavaScript, VS code and Random Forest Classifier algorithm.",
-    // },
+    
     {
       title: "Here’s the drink Android application",
       duration: { fromDate: "Dec-2021", toDate: "Feb-2022" },
       description:
-        "Built an android application for finding the product in store.",
+        "Built an android application for finding the product in store. Created the login and signup page for the users. Users find their required product availability through category selection or by searching product names. The unique feature of this application is displaying the blueprint of the shop and highlighting the Alice number of the product.",
       subHeading:
         "Technologies used: Java, XML, Android studio, Firebase and motion sensors.",
     },
-    // {
-    //   title: "Bank churn prediction ",
-    //   duration: { fromDate: "Mar-2022", toDate: "Jun-2022" },
-    //   description:
-    //     "Builded meachine learning model can predict the churning customers",
-    //   subHeading:
-    //     "Technologies used:  python, anaconda, kggle dataset and convolutional neural network.",
-    // },
+    {
+      title: "Malicious Web Content Detection",
+      duration: { fromDate: "Aug-2021", toDate: "Oct-2021" },
+      description:
+        "Builded Machine learning model can predict whether the user entered URL is safe or not.",
+      subHeading:
+        "Technologies used: python, anaconda, Django, JavaScript, VS code and Random Forest Classifier algorithm.",
+    },
+    {
+       title: "Bank churn prediction ",
+       duration: { fromDate: "Mar-2022", toDate: "Jun-2022" },
+       description:
+         "Builded meachine learning model can predict the churning customers",
+       subHeading:
+         "Technologies used:  python, anaconda, kggle dataset and convolutional neural network.",
+     },
   ];
 
   const resumeDetails = [
@@ -101,31 +102,35 @@ export default function Resume(props) {
         toDate={"2021"}
       />
     </div>,
-    // <div
-    //   className="resume-screen-container work-experience"
-    //   key="work-experience"
-    // >
-    //   <ResumeHeading
-    //     heading={"Data science using python Online Intern"}
-    //     subHeading={"Andhra Pradesh State Skill Development Corporation"}
-    //     fromDate={"Apr-2021"}
-    //     toDate={"Jun-2021"}
-    //   />
-    //   <div className="experience-description">
-    //     <span className="resume-description-text">
-    //       Experienced as Data analytic. Worked with different types of datasets
-    //       and analysed the outcomes by using Python and Machine Learning
-    //       algorithms.
-    //     </span>
-    //   </div>
-    //   {/* <div className="experience-description">
-    //     <span className="resume-description-text">
-    //       Experienced as Data analytic. Worked with different types of datasets
-    //       and analysed the outcomes by using Python and Machine Learning
-    //       algorithms.
-    //     </span>
-    //   </div> */}
-    // </div>,
+    <div
+      className="resume-screen-container work-experience"
+      key="work-experience"
+    >
+      <ResumeHeading
+        heading={"Evaluation of Social Messaging platforms"}
+        subHeading={"Comparative research of WhatsApp and Telegram by using heuristic principles"}
+        fromDate={"Jun-2022"}
+        toDate={"Sep-2022"}
+      />
+      {/* <div className="experience-description">
+        <span className="resume-description-text">
+          Experienced as Data analytic. Worked with different types of datasets
+          and analysed the outcomes by using Python and Machine Learning
+          algorithms.
+        </span>
+      </div> */}
+      <div className="experience-description">
+        <span className="resume-description-text">
+        The main objective of this study is to measure the user experience while using interactive interfaces. User Experience is 
+        evaluated between the WhatsApp and Telegram messaging applications using Usability heuristics. Best messaging 
+        application is selected based on the results of the survey. Published article is 
+        </span>
+        {/* <span className="profile-role-tagline">For more projects</span> */}
+      <a href="https://www.diva-portal.org/smash/record.jsf?dswid=906&pid=diva2%3A1707558&c=2&searchType=SIMPLE&language=en&query=Venkata+Siva+Sai+Kumar+&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all">
+        <button className="btn highlighted-btn">here</button>
+      </a>
+      </div>
+    </div>,
     <div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
@@ -140,7 +145,7 @@ export default function Resume(props) {
               flexDirection: "column",
               width: "100%",
               marginLeft: "1rem",
-            }}
+            }}  
             className=""
           >
             <span>{skill.skill}</span>
