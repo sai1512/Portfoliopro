@@ -60,6 +60,24 @@ export default function Resume(props) {
   ];
 
   const projectDetails = [
+
+    {
+      title: "Sentiment analysis prediction",
+      duration: { fromDate: "Aug-2024", toDate: "Sep-2024" },
+      description:
+        "Developed an end to end web based application which predicts emotions as positive or negative. Applied data pre processing techniques and conducted exploratory data analysis. Website developed using HTML & CSS and deployed through Flask API",
+      subHeading:
+        "Technologies used: Python, FlaskAPI, Anaconda, XG Boost and Random Forest Algorithm.",
+    },
+
+    {
+      title: "CodeQuack",
+      duration: { fromDate: "Aug-2023", toDate: "Oct-2023" },
+      description:
+        "Built an online coding tutorial platform, with specific requirements centered around user registration, login, video uploading, quiz creation, and feedback submission. The goal was to offer a user-friendly space for individuals like potential users, educators, and administrators to enhance their coding skills through tutorial videos and quizzes.",
+      subHeading:
+        "Technologies used: JavaScript, ReactJS, MongoDB, Visual Studio Code, Figma."
+    },
     
     {
       title: "Here’s the drink Android application",
@@ -77,14 +95,15 @@ export default function Resume(props) {
       subHeading:
         "Technologies used: python, anaconda, Django, JavaScript, VS code and Random Forest Classifier algorithm.",
     },
+
     {
-       title: "Bank churn prediction ",
-       duration: { fromDate: "Mar-2022", toDate: "Jun-2022" },
-       description:
-         "Builded meachine learning model can predict the churning customers",
-       subHeading:
-         "Technologies used:  python, anaconda, kggle dataset and convolutional neural network.",
-     },
+      title: "Bank churn prediction ",
+      duration: { fromDate: "Mar-2022", toDate: "Jun-2022" },
+      description:
+        "Builded meachine learning model can predict the churning customers",
+      subHeading:
+        "Technologies used:  python, anaconda, kggle dataset and convolutional neural network.",
+    },
   ];
 
   const resumeDetails = [
@@ -123,7 +142,7 @@ export default function Resume(props) {
         <span className="resume-description-text">
         The main objective of this study is to measure the user experience while using interactive interfaces. User Experience is 
         evaluated between the WhatsApp and Telegram messaging applications using Usability heuristics. Best messaging 
-        application is selected based on the results of the survey. Published article is 
+        application is selected based on the results of the survey. Published article is  
         </span>
         {/* <span className="profile-role-tagline">For more projects</span> */}
       <a href="https://www.diva-portal.org/smash/record.jsf?dswid=906&pid=diva2%3A1707558&c=2&searchType=SIMPLE&language=en&query=Venkata+Siva+Sai+Kumar+&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all">

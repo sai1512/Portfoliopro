@@ -1,7 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
-import "./Profile.css";
 import ScrollService from "../../../utilities/ScrollService";
+import "./Profile.css";
 
 export default function Profile() {
   return (
@@ -46,7 +46,7 @@ export default function Profile() {
                     // 1000,
                     // "React/React Native Developer",
                     // 1000,
-                    "Developer 💻",
+                    "AI & ML Enthusiastic 💻",
                     1000,
                     // "AI & ML Enthusiastic",
                     // 1000,
@@ -64,7 +64,7 @@ export default function Profile() {
             <button className="btn primary-btn"
             onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >Let's talk</button>
-            <a href="./Sai_cv.pdf" download="Sai_cv.pdf">
+            <a href="./Sai_cv_.pdf" download="Sai_cv_.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
